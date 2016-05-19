@@ -7,14 +7,8 @@ body{
     margin: 0 auto;
 	text-align: center;
 }
-#header{
-	text-align:center !important;
-}
 
-img { 
-    display: inline-block;
-	margin: 0 auto !important;
-}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -45,6 +39,16 @@ li a:hover {
 
 .active {
     background-color: #001f33;
+}
+
+#header{
+	text-align:center !important;
+	font-family: 'Rock Salt', cursive;
+	font-size: 100px !important;
+}
+
+h2{
+	font-family: 'Rock Salt', cursive;
 }
 
 h1{

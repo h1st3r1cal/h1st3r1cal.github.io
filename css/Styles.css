@@ -1,6 +1,6 @@
 /* Body */
 body {
-	background-color: black;
+	background: black;
 	font: 1.1em 'Raleway' sans-serif;
 	color: #33adff;
 	}
@@ -11,6 +11,7 @@ h1 {
 	font: 4.0em 'Rock Salt', cursive;
 	text-align: center;
 	}
+
 
 /* Links */
 ul {

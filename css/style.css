@@ -8,8 +8,8 @@ body{
 	text-align: center;
 }
 
-
-ul {
+/*Nav bar*/
+#nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -21,11 +21,11 @@ ul {
 	text-align:center !important;
 }
 
-li {
+#nav li {
 	float:none !important; 
 	display:inline !important;
 }
-li a {
+#nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -33,11 +33,11 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+#nav li a:hover {
     background-color: #33adff;
 }
 
-.active {
+#nav .active {
     background-color: #001f33;
 }
 

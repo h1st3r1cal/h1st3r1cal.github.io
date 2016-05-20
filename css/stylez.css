@@ -1,7 +1,7 @@
 body{
- background-color: black;
- background-repeat: norepeat;
- background-size: cover;
+ background-image: url("https://images.unsplash.com/photo-1462750230268-f97ef3e635ee?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=42152c5d45898dda2df44d66032c1caf") ;
+ background-repeat: no-repeat;
+	background-size: cover;
  color: #33adff;
 font-family: 'Raleway', sansserif;
  	text-align: center;

@@ -2,8 +2,7 @@ body{
 	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
 	color: #33adff;
-	background-image: url(https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=380affd09cabda13b364ce5fda0d7cbb) ;
-	background-size: cover;
+	background-color: black;
 	width: 800px;
     margin: 0 auto;
 	text-align: center;
@@ -19,7 +18,7 @@ ul {
     width: 100%;
     overflow: hidden;
     background-color: black;
-	text-align: center !important;
+	text-align:center !important;
 }
 
 li {

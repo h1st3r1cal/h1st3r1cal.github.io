@@ -1,9 +1,12 @@
+.main{
+font-family: 'Exo', sans-serif;
+}
 #navbar{
-
+font-family: 'Yeseva One', cursive;
 }
 #pg2{
 	text-align: center;
 	background-color: white;
-	color: blue;
+	
 }
 

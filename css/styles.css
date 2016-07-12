@@ -1,12 +1,54 @@
 .main{
-font-family: 'Exo', sans-serif;
+	font-family: 'Exo', sans-serif;
+	font-size: 30px;
 }
+
 #navbar{
-font-family: 'Yeseva One', cursive;
+	font-family: 'Yeseva One', cursive;
 }
-#pg2{
-	text-align: center;
-	background-color: white;
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	float: left;
+	display: inline;   
+	color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#pg1{
+	height: 700px;
+	background-color: #00264d;
+	color: white
 	
 }
+
+h2{
+	text-indent: 50px;
+}
+
+img{
+	float: right;
+	width: 370px;
+	height: auto;
+}
+
+
+#pg2{
+	height: 700px;
+	text-align: center;
+	background-color: white;
+	color: #00264d;
+}
+
+#pg3{
+	height: 700px;
+	background-color: #00264d;
+	color: white
+}
+
 

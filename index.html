@@ -1,60 +1,109 @@
 <html>
 <head>
-	<title>Zero Gravity Inq</title>
+	<meta charset="UTF-8">
 	<meta name="description" content="Defying Gravity">
 	<meta name="author" content="Starria Turner">
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Exo|Yeseva+One" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-	<script>
-	$('.smooth').on('click', function() {
-		$.smoothScroll({
-			scrollElement: $('body'),
-			scrollTarget: '#' + this.id
-		});
-    
-		return false;
-	});
-	</script>
+	<title>Zero Gravity Inq</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 </head>
 <body>
-	
-	<div class="main">
-	<div id = "navbar">
-		<ul class = "nav">
+		<ul id="nav">
 			<li><a href="#">Home</a></li>
-			<li><a href="pages/portfolio.html">Projects</a></li>
-			<li><a href="pages/contact.html">Contact</a></li>
+			<li><a href="#Slide2">About Me</a></li>
+			<li><a href="#Slide3">Portfolio</a></li>
+			<li><a href="#Slide4">Contact</a></li>
 		</ul>
-		<br>
-	</div>
-	<div id = "pg1">
-		<a id = "hello" class = "smooth"></a>
-		<h1>Hello, my name is Starria!</h1>
-		<img src="me.png" alt="Starria Turner">
-		<h2>And I am a designer</h2>
-		
+
+	<div id="Slide1">
+		<div class="Hello">
+			<h1>Hi, my name is Starria</h1>
+			<h2>And I am a web designer</h2>
+		</div>
 	</div>
 	
-	<div id = "pg2">
-		<a id = "yeah" class = "smooth"></a>
-		<p>I write</p>
-		<p>I draw</p>
-		<p>I blog</p>
+	<div id="Slide2">
+		<div class="I">
+			<table id="I">
+				<tr>
+					<td>I write</td>
+				</tr>
+				<tr>
+					<td>I draw</td>
+				</tr>
+				<tr>
+					<td>I fangirl</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+			
+	<div id="Slide3">
+		<h2>Portfolio</h2>
+		<script src="/js/slideshow.js"></script>
+	<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+					<img src="http://i.imgur.com/eHT42HC.png" style="width:100%">
+					<div class="text">Happiness in Retrospect</div>
+	</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+					<img src="http://i.imgur.com/NMGLVJL.png" style="width:100%">
+					<div class="text">Erin Tyler</div>
+	</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+					<img src="http://i.imgur.com/Lo8viYL.png" style="width:100%">
+					<div class="text">Usagi Process</div>
+	</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+		<p>You can view more in <a href="http://imgur.com/a/9aP1c">my art gallery!</a></p>
 	</div>
 	
-	<div id = "pg3">
-		<a id = "goodbye" class = "smooth"></a>
-		<h3>Currently open to:</h3>
-		<ul>
-			<li>Web Design Projects</li>
-			<li>Logo Design</li>
-			<li>Social Media Marketing</li>
-			<p>and More!</p>
-		</ul>
-	</div>
+	<div id="Slide4">
+		<div class="contact">
+			<h2>Contact Me!</h2>
+			<p>Fill out the form below if you have any questions or just want to chat!</p>
+			<form>
+				<form action="MAILTO:sturner@atl.yearup.org" method="post" enctype="text/plain">
+					Name:<br>
+				<input type="text" name="name" value="your name"><br>
+					E-mail:<br>
+				<input type="text" name="mail" value="your email"><br>
+					Comment:<br>
+				<input type="text" name="comment" value="your comment" size="50">
+				<br>
+				<br>
+				<input type="submit" value="Send">
+				<input type="reset" value="Reset">
+			</form>
+			<br>
+			<h2>Elsewhere</h2>
+				<p>You can talk to me elsewhere online:</p>
+				<ul id ="elsewhere">
+					<li>Reddit</li>
+					<li>Tumblr</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+					<li>Pinterest</li>
+				</ul>
+			<footer>
+			<a href="">Contact the webmistress!</a> Thank you for viewing!
+			</footer>
+		</div>
 	</div>
 </body>
 </html>

@@ -1,10 +1,12 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Defying Gravity">
 	<meta name="author" content="Starria Turner">
 	<title>Zero Gravity Inq</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee|Flamenco" rel="stylesheet">
 	
 </head>
 <body>
@@ -40,7 +42,6 @@
 			
 	<div id="Slide3">
 		<h2>Portfolio</h2>
-		<script src="/js/slideshow.js"></script>
 	<div class="slideshow-container">
 			<div class="mySlides fade">
 				<div class="numbertext">1 / 3</div>
@@ -70,6 +71,33 @@
 		<span class="dot" onclick="currentSlide(2)"></span> 
 		<span class="dot" onclick="currentSlide(3)"></span> 
 	</div>
+	<script>
+		var slideIndex = 1;
+			showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1} 
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none"; 
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+			slides[slideIndex-1].style.display = "block"; 
+			dots[slideIndex-1].className += " active";
+	</script>
 		<p>You can view more in <a href="http://imgur.com/a/9aP1c">my art gallery!</a></p>
 	</div>
 	

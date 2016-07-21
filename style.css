@@ -41,14 +41,28 @@ ul{
     padding: 0;
 }
 
-#nav li{
+li a:hover {
+	color: black;
+}
+
+#nav li {
 	display: inline;
+	color: white;
 }
 
 #nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+#nav li a{
+	color: white;
+	text-decoration: none;
+}
+
+#nav li a:hover {
+	color: black;
 }
 
 input[type=submit], input[type=reset] {

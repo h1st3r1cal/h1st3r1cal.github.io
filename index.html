@@ -7,7 +7,6 @@
 	<title>Zero Gravity Inq</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=ABeeZee|Flamenco" rel="stylesheet">
-	
 </head>
 <body>
 		<ul id="nav">
@@ -26,81 +25,138 @@
 	
 	<div id="Slide2">
 		<div class="I">
-			<table id="I">
-				<tr>
-					<td>I write</td>
-				</tr>
-				<tr>
-					<td>I draw</td>
-				</tr>
-				<tr>
-					<td>I fangirl</td>
-				</tr>
-			</table>
+			<ul>
+				<li>I write</li>
+				<li>I draw</li>
+				<li>I fangirl</li>
+			</ul>
 		</div>
 	</div>
 			
 	<div id="Slide3">
+	<div class="portfolio">
 		<h2>Portfolio</h2>
-	<div class="slideshow-container">
-			<div class="mySlides fade">
-				<div class="numbertext">1 / 3</div>
-					<img src="http://i.imgur.com/eHT42HC.png" style="width:100%">
-					<div class="text">Happiness in Retrospect</div>
-	</div>
+<style>
 
-			<div class="mySlides fade">
-				<div class="numbertext">2 / 3</div>
-					<img src="http://i.imgur.com/NMGLVJL.png" style="width:100%">
-					<div class="text">Erin Tyler</div>
-	</div>
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-			<div class="mySlides fade">
-				<div class="numbertext">3 / 3</div>
-					<img src="http://i.imgur.com/Lo8viYL.png" style="width:100%">
-					<div class="text">Usagi Process</div>
-	</div>
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
-	<br>
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
-	<div style="text-align:center">
-		<span class="dot" onclick="currentSlide(1)"></span> 
-		<span class="dot" onclick="currentSlide(2)"></span> 
-		<span class="dot" onclick="currentSlide(3)"></span> 
-	</div>
-	<script>
-		var slideIndex = 1;
-			showSlides(slideIndex);
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
-		function plusSlides(n) {
-			showSlides(slideIndex += n);
-		}
+.active {
+  background-color: #717171;
+}
 
-		function currentSlide(n) {
-			showSlides(slideIndex = n);
-		}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
-	function showSlides(n) {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementsByClassName("dot");
-		if (n > slides.length) {slideIndex = 1} 
-		if (n < 1) {slideIndex = slides.length}
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none"; 
-		}
-		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		}
-			slides[slideIndex-1].style.display = "block"; 
-			dots[slideIndex-1].className += " active";
-	</script>
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="http://i.imgur.com/eHT42HC.png" style="width:100%">
+  <div class="text"><b>Happiness in Retrospect</b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="http://i.imgur.com/NMGLVJL.png" style="width:100%">
+  <div class="text"><b>Erin Tyler</b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="http://i.imgur.com/Lo8viYL.png" style="width:100%">
+  <div class="text"><b>Usagi Process</b></div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
 		<p>You can view more in <a href="http://imgur.com/a/9aP1c">my art gallery!</a></p>
 	</div>
-	
+	</div>
+	<br>
 	<div id="Slide4">
 		<div class="contact">
 			<h2>Contact Me!</h2>
@@ -120,7 +176,7 @@
 			</form>
 			<br>
 			<h2>Elsewhere</h2>
-				<p>You can talk to me elsewhere online:</p>
+				<p id= "talk">You can talk to me elsewhere online:</p>
 				<ul id ="elsewhere">
 					<li>Reddit</li>
 					<li>Tumblr</li>

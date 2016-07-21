@@ -2,12 +2,19 @@ body{
 	font-family: 'ABeeZee', sans-serif;
 	text-align: center;
 	font-size: 19px;
+	color: white;
+	display: inline;
+	min-height: 100%;	
+	background-size: cover;
+    background: blue; /* For browsers that do not support gradients */
+    background: linear-gradient(blue, black); /* Standard syntax (must be last) */
 }
 
 .Hello{
 	font-family: 'ABeeZee', sans-serif;
 	height: 1000px;
 	font-size: 50px !important;
+
 }
 
 .I ul{
@@ -23,8 +30,6 @@ body{
 .contact{
 	height: 1000px;
 }
-
-
 
 h2{
 	font-family: 'Flamenco', cursive;
@@ -44,9 +49,21 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
+
+input[type=submit], input[type=reset] {
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input {
+	height: 50px;
+	margin-top: 2px;
+	padding: 0 0 0 8px;
+	border-radius: 20px;
+	}
+	

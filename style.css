@@ -14,7 +14,7 @@ body{
 	font-family: 'ABeeZee', sans-serif;
 	height: 1000px;
 	font-size: 50px !important;
-	padding: 4cm;
+	padding: 2cm;
 
 }
 
@@ -22,7 +22,7 @@ body{
 	height: 1000px;
 	text-align: center;
 	font-size: 90px;
-	padding: 3cm;
+	padding: 1cm;
 }
 
 .portfolio{
@@ -38,6 +38,7 @@ body{
 	height: 1000px;
 	padding: 2cm;
 }
+
 h2{
 	font-family: 'Flamenco', cursive;
 	font-size: 50px;
@@ -59,30 +60,6 @@ a:hover {
 
 a:visited{
 	color: #cceeff;
-}
-
-#nav li {
-	display: inline;
-	color: white;
-}
-
-#nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-	position: fixed !important;
-	top: 0px;
-	left: 0;
-	z-index: 9999;
-}
-
-#nav li a{
-	color: white;
-	text-decoration: none;
-}
-
-#nav li a:hover {
-	color: black;
 }
 
 input[type=submit], input[type=reset] {

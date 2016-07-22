@@ -11,19 +11,13 @@
 	<script src="scripts.js"></script>
 </head>
 <body>
-		<ul id="nav">
-			<li><a href="#">Home</a> | </li>
-			<li><a href="#Slide2">About Me</a> | </li>
-			<li><a href="#Slide3">Portfolio</a> | </li>
-			<li><a href="#Slide4">Contact</a> | </li>
-			<li><a href="#Slide5">Elsewhere</a></li>
-		</ul>
-
 	<div id="Slide1">
 		<div class="Hello">
 			<h1>Hi, my name is Starria</h1>
 			<h2>And I am a web designer</h2>
+			<a href="#Slide2"><img src="down_arrow.png"></a>
 		</div>
+		
 	</div>
 	
 	<div id="Slide2">
@@ -32,8 +26,11 @@
 				<li>I <a href="http://zerogravityinq.blogspot.com">write</a></li>
 				<li>I <a href="http://h1st3r1cal.deviantart.com">draw</a></li>
 				<li>I <a href="http://zerogravityinq.tumblr.com">fangirl</a></li>
+				<li><a href="#Slide3"><img src="down_arrow.png"></a></li>
 			</ul>
+			
 		</div>
+		
 	</div>
 			
 	<div id="Slide3">
@@ -157,7 +154,9 @@ function showSlides() {
 </script>
 
 		<p>You can view more in <a href="http://imgur.com/a/9aP1c">my art gallery!</a></p><br>
-	</div>	
+		<a href="#Slide4"><img src="down_arrow.png"></a>
+	</div>
+		
 	</div>
 
 	<div id="Slide4">
@@ -166,16 +165,18 @@ function showSlides() {
 			<p>Fill out the form below if you have any questions or just want to chat!</p>
 			<form action="MAILTO:sturner@atl.yearup.org" <form action="MAILTO:sturner@atl.yearup.org" method="post" enctype="text/plain">
 			Name:<br>
-			<input type="text" name="name" value="your name"><br>
+			<input type="text" name="name"><br>
 			E-mail:<br>
-			<input type="text" name="mail" value="your email"><br>
+			<input type="email" name="email"><br>
 			Comment:<br>
-			<input type="text" name="comment" value="your comment" size="50"><br><br>
+			<input type="text" name="comment" size="50"><br><br>
 			<input type="submit" value="Send">
 			<input type="reset" value="Reset">
 			</form>
-			<br>
+			<br>			
+			<a href="#Slide5"><img src="down_arrow.png"></a>
 			</div>
+
 			</div>
 			<div id="Slide5">
 			<div class="elsewhere">
@@ -189,7 +190,7 @@ function showSlides() {
 				</div>
 					</div>			
 		<footer>
-			<a href="">Contact the webmistress!</a> Thank you for viewing!
+			<a href="MAILTO:sturner@atl.yearup.org">Contact the webmistress!</a> Thank you for viewing!
 			</footer>
 			
 			<img class= "scrollToTop" src="up_arrow.png" style="max-width:128px;max-height:128px;">

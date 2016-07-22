@@ -7,7 +7,7 @@ body{
 	min-height: 100%;	
 	background-size: cover;
     background: blue; /* For browsers that do not support gradients */
-    background: linear-gradient(blue, black); /* Standard syntax (must be last) */
+    background: linear-gradient(#3399ff, #00264d, black); /* Standard syntax (must be last) */
 }
 
 .Hello{
@@ -49,8 +49,16 @@ ul{
     padding: 0;
 }
 
-li a:hover {
+a{
+	text-decoration: none;
+}
+
+a:hover {
 	color: black;
+}
+
+a:visited{
+	color: #cceeff;
 }
 
 #nav li {

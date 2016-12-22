@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Coming Soon</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+   <section>
+  	<div class="glitch">
+	  	<div class="text">
+		  	<span>IT'S COMING<br><br>GET READY<br><br>ZERO GRAVITY INQ</span>
+	  	</div> 	
+	  </div>
+  </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+$(function(){
+  for(i=0;i<4;i++){
+    $('.glitch .text span').eq(0).clone().prependTo('.glitch .text');
+  }
+});
+</script>
+  </body>
+</html>
